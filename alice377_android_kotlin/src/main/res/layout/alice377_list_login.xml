@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mistyrose"
+    android:padding="10dp">
+
+    <ImageView
+            android:id="@+id/alice377_list_login_I_img"
+            style="@android:style/Widget.DeviceDefault.Light.ImageButton"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/lavender"
+            app:srcCompat="@drawable/googleg_standard_color_18"/>
+
+    <TextView
+        android:id="@+id/alice377_list_login_T_title"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_alignTop="@+id/alice377_list_login_I_img"
+        android:layout_toEndOf="@+id/alice377_list_login_I_img"
+        android:layout_toRightOf="@+id/alice377_list_login_I_img"
+        android:background="@color/lavender"
+        android:gravity="center_vertical|start"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:text="@string/alice377_list_login_t_title"
+        android:textAlignment="viewStart"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/alice377_list_login_T_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alice377_list_login_I_img"
+        android:layout_marginTop="20dp"
+        android:background="@color/lavender"
+        android:text="@string/alice377_list_login_t_account"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/alice377_list_login_E_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/alice377_list_login_T_account"
+        android:layout_toEndOf="@+id/alice377_list_login_T_account"
+        android:layout_toRightOf="@+id/alice377_list_login_T_account"
+        android:background="@color/lavender"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/alice377_list_login_e_account"
+        android:textColor="@color/blue"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/alice377_list_login_T_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alice377_list_login_T_account"
+        android:layout_marginTop="20dp"
+        android:background="@color/lavender"
+        android:text="@string/alice377_list_login_t_password"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/alice377_list_login_E_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/alice377_list_login_T_password"
+        android:layout_toEndOf="@+id/alice377_list_login_T_password"
+        android:layout_toRightOf="@+id/alice377_list_login_T_password"
+        android:background="@color/lavender"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="@string/alice377_list_login_e_password"
+        android:textColor="@color/blue"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/alice377_list_login_B_login"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alice377_list_login_E_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/newgreen"
+        android:onClick="login"
+        android:text="@string/alice377_list_login_b_login"
+        android:textColor="@color/crimson"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</RelativeLayout>

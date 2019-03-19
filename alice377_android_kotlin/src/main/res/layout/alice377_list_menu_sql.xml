@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lavenderblush"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/sql_E_write"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/azure"
+        android:gravity="top"
+        android:hint="@string/sql_e_write"
+        android:inputType="textMultiLine"
+        android:maxHeight="200dp"
+        android:maxLines="10"
+        android:paddingBottom="10dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/blue"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/sql_B_query"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sql_E_write"
+        android:layout_alignStart="@+id/sql_E_write"
+        android:layout_below="@+id/sql_E_write"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/newgreen"
+        android:onClick="querybtn"
+        android:text="@string/sql_b_query"
+        android:textColor="@color/crimson"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/sql_B_support"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/sql_E_write"
+        android:layout_alignRight="@+id/sql_E_write"
+        android:layout_below="@+id/sql_E_write"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/khaki"
+        android:onClick="supportbtn"
+        android:text="@string/sql_b_support"
+        android:textColor="@color/crimson"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</RelativeLayout>

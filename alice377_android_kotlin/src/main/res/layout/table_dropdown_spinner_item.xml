@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/table_dropdown_item_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:ellipsize="marquee"
+    android:gravity="center"
+    android:padding="10dp"
+    android:paddingEnd="20dp"
+    android:paddingStart="20dp"
+    android:singleLine="true"
+    android:textAllCaps="false"
+    android:textColor="@color/blue"
+    android:textSize="24sp"
+    android:textStyle="bold">
+
+</TextView>

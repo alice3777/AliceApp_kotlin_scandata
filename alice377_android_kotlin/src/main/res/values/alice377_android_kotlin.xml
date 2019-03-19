@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="alice377_list_t_today">今天日期：</string>
+    <string name="alice377_list_t_title">工程模式</string>
+    <string name="alice377_list_t_gettoday" />
+    <string name="alice377_list_t_msg">資料載入中，請稍後…</string>
+    <string name="alice377_list_item_t_data">資料</string>
+    <string name="alice377_list_login_t_title">工程模式登入視窗</string>
+    <string name="alice377_list_login_t_account">帳號：</string>
+    <string name="alice377_list_login_e_account" />
+    <string name="alice377_list_login_t_password">密碼：</string>
+    <string name="alice377_list_login_e_password" />
+    <string name="alice377_list_login_b_login">登入</string>
+    <string name="alice377_list_t_copyright">Copyright © 2018 alice377</string>
+    <string name="alice377_list_t_loginmsg">您需要輸入帳號密碼才能開啟『工程模式』</string>
+    <string name="alice377_list_quit_t_title">工程模式確認視窗</string>
+    <string name="alice377_list_quit_t_msg">確定要離開工程模式嗎?</string>
+    <string name="alice377_list_quit_b_cancel">取消</string>
+    <string name="alice377_list_quit_b_yes">確定</string>
+    <string name="menu_t_title">工程模式選單</string>
+    <string name="menu_sql_b_btn">SQL查詢</string>
+    <string name="menu_table_b_btn">選擇資料表查詢</string>
+    <string name="sql_e_write">請輸入WHERE以後的語法</string>
+    <string name="sql_b_query">查詢</string>
+    <string name="menu_logdel_b_btn">清除log資料</string>
+    <string name="table_t_dbname">※請選擇要查詢的資料庫：</string>
+    <string name="table_t_dbtable">※請選擇要查詢的資料表：</string>
+    <string name="table_b_check">確定</string>
+    <string name="alice377_list_t_title2">工程模式-資料表查詢</string>
+    <string name="alice377_list_t_sqltitle">※SQLite語法及查詢結果</string>
+    <string name="alice377_list_delcheck_t_title">LOG資料刪除確認視窗</string>
+    <string name="alice377_list_delcheck_t_msg">確定要刪除LOG資料嗎?</string>
+    <string name="sql_b_support">說明</string>
+    <string name="support_t_detail">※LOG資料欄位說明：</string>
+    <string name="table_t_sql_where">※請輸入where條件：</string>
+    <string name="table_t_sql_order">※請輸入order條件：</string>
+    <string name="alice377_list_t_sql_where">where：</string>
+    <string name="alice377_list_t_sql_order">order by：</string>
+</resources>

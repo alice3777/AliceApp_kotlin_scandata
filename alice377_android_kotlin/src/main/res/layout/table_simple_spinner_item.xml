@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/table_item_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lavenderblush"
+    android:ellipsize="marquee"
+    android:gravity="center"
+    android:padding="5dp"
+    android:singleLine="true"
+    android:textAllCaps="false"
+    android:textColor="@color/midnightblue"
+    android:textSize="24sp"
+    android:textStyle="bold">
+
+</TextView>

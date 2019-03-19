@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lavenderblush"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/alice377_list_R_logo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+                android:id="@+id/alice377_list_I_img"
+                android:layout_width="180dp"
+                android:layout_height="135dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/googleg_standard_color_18"/>
+
+        <ImageView
+                android:id="@+id/alice377_list_I_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/alice377_list_I_img"
+                android:layout_centerHorizontal="true"
+        />
+
+        <TextView
+            android:id="@+id/alice377_list_T_loginmsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/alice377_list_t_loginmsg"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/alice377_list_T_copyright"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/alice377_list_t_copyright"
+            android:textAlignment="center"
+            android:textColor="@color/alice377_copyright"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/alice377_list_R_rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/alice377_list_T_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/newgreen"
+            android:text="@string/alice377_list_t_title"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/alice377_list_I_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="false"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/newgreen"
+            android:onClick="I_setting"
+            android:text="@string/alice377_list_t_title"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:srcCompat="@android:drawable/ic_menu_search" />
+
+        <TextView
+            android:id="@+id/alice377_list_T_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/alice377_list_T_title"
+            android:layout_alignStart="@+id/alice377_list_T_title"
+            android:layout_below="@+id/alice377_list_T_title"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
+            android:text="@string/alice377_list_t_today"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/alice377_list_T_gettoday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/alice377_list_T_today"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@+id/alice377_list_T_today"
+            android:layout_toRightOf="@+id/alice377_list_T_today"
+            android:gravity="center_vertical"
+            android:text="@string/alice377_list_t_gettoday"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/alice377_list_T_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/alice377_list_T_today"
+            android:layout_alignStart="@+id/alice377_list_T_today"
+            android:layout_below="@+id/alice377_list_T_gettoday"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/alice377_list_T_today"
+            android:layout_toRightOf="@+id/alice377_list_T_today"
+            android:background="@color/lightgoldenrodyellow"
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
+            android:text="@string/alice377_list_t_msg"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <ListView
+            android:id="@+id/alice377_list_L_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/alice377_list_T_msg"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:stackFromBottom="false"
+            android:textFilterEnabled="false" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/alice377_list_R_query"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/alice377_list_T_title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/newgreen"
+            android:paddingRight="30dp"
+            android:text="@string/alice377_list_t_title2"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/alice377_list_I_setting2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="false"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/newgreen"
+            android:onClick="I_setting"
+            android:text="@string/alice377_list_t_title"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:srcCompat="@android:drawable/ic_menu_search" />
+
+        <TextView
+            android:id="@+id/alice377_list_T_sqltitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/alice377_list_T_title2"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignStart="@+id/alice377_list_T_title2"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_below="@+id/alice377_list_T_title2"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="false"
+            android:layout_centerVertical="false"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingRight="30dp"
+            android:text="@string/alice377_list_t_sqltitle"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/alice377_list_I_requery"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignEnd="@+id/alice377_list_I_setting2"
+            android:layout_alignRight="@+id/alice377_list_I_setting2"
+            android:layout_below="@+id/alice377_list_T_title2"
+            android:layout_marginTop="15dp"
+            android:background="@color/skyblue"
+            android:onClick="requerybtn"
+            app:srcCompat="@drawable/common_full_open_on_phone" />
+
+        <TextView
+            android:id="@+id/alice377_list_T_sql_where"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/alice377_list_T_title2"
+            android:layout_alignStart="@+id/alice377_list_T_title2"
+            android:layout_below="@+id/alice377_list_T_sqltitle"
+            android:layout_marginTop="10dp"
+            android:background="@color/gainsboro"
+            android:text="@string/alice377_list_t_sql_where"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/alice377_list_E_sql_where"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/alice377_list_T_sql_where"
+            android:layout_marginRight="10dp"
+            android:layout_toEndOf="@+id/alice377_list_T_sql_where"
+            android:background="@color/azure"
+            android:ems="2"
+            android:inputType="textMultiLine"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:singleLine="false"
+            android:textColor="@color/blue"
+            android:textSize="30sp"
+            android:layout_toRightOf="@+id/alice377_list_T_sql_where" />
+
+        <TextView
+            android:id="@+id/alice377_list_T_sql_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@id/alice377_list_E_sql_order"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@color/gainsboro"
+            android:text="@string/alice377_list_t_sql_order"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/alice377_list_E_sql_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/alice377_list_E_sql_where"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/alice377_list_T_sql_order"
+            android:layout_toRightOf="@+id/alice377_list_T_sql_order"
+            android:background="@color/azure"
+            android:ems="2"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp"
+            android:singleLine="false"
+            android:textColor="@color/blue"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/alice377_list_T_msg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/alice377_list_T_title2"
+            android:layout_below="@+id/alice377_list_E_sql_order"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/lightgoldenrodyellow"
+            android:gravity="left"
+            android:paddingLeft="5dp"
+            android:paddingStart="5dp"
+            android:text="@string/alice377_list_t_msg"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_alignRight="@+id/alice377_list_T_title2" />
+
+        <ListView
+            android:id="@+id/alice377_list_L_menu2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/alice377_list_T_msg2"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:stackFromBottom="false"
+            android:textFilterEnabled="false" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
