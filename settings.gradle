@@ -1,2 +1,3 @@
+include ':alice377_scandata'
 include 'aliceapp_00'
 include 'alice377_android_kotlin'

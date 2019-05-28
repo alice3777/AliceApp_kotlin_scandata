@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/alice377_android_kotlin" />
+            <option value="$PROJECT_DIR$/alice377_scandata" />
             <option value="$PROJECT_DIR$/aliceapp_00" />
           </set>
         </option>
